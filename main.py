@@ -34,7 +34,7 @@ if uploaded_file is not None:
     test_size = st.sidebar.slider("Test Size", 0.1, 0.9, 0.2, 0.1)
     random_state = st.sidebar.slider("Random State", 0, 100, 50, 1)
 
-    st.sidebar.head("Step 4: Model Training", divider=True)
+    st.sidebar.header("Step 4: Model Training", divider=True)
     if st.sidebar.button("Train Model"):
         with st.spinner("Training Model...", show_time=True):
             X = df[features]
